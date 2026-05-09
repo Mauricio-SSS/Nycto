@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nycto - Objective-linked focus tracking</title>
+  <meta name="description" content="Nycto helps you plan time, track focus sessions, and understand your week through objective-linked insights.">
+  <meta property="og:title" content="Nycto - Objective-linked focus tracking">
+  <meta property="og:description" content="A calm time tracking app that connects focus sessions, planned blocks, and objective history.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/og-card.svg">
+  <link rel="icon" href="assets/nycto-mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <svg class="svg-sprite" aria-hidden="true" focusable="false">
+  <symbol id="icon-timer" viewBox="0 0 24 24"><path d="M10 2h4"/><path d="M12 14l3-3"/><path d="M12 22a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"/><path d="M18 6l2-2"/></symbol>
+  <symbol id="icon-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></symbol>
+  <symbol id="icon-calendar" viewBox="0 0 24 24"><path d="M7 2v4M17 2v4"/><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18"/><path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></symbol>
+  <symbol id="icon-chart" viewBox="0 0 24 24"><path d="M4 19V5"/><path d="M4 19h16"/><path d="M7 15l4-4 3 3 5-7"/><circle cx="7" cy="15" r="1.5"/><circle cx="11" cy="11" r="1.5"/><circle cx="14" cy="14" r="1.5"/><circle cx="19" cy="7" r="1.5"/></symbol>
+  <symbol id="icon-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.4 8.5-8 10-4.6-1.5-8-5-8-10V6l8-3Z"/><path d="M9 12l2 2 4-5"/></symbol>
+  <symbol id="icon-link" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.1 0l2-2a5 5 0 0 0-7.1-7.1l-1.2 1.2"/><path d="M14 11a5 5 0 0 0-7.1 0l-2 2A5 5 0 0 0 12 20.1l1.2-1.2"/></symbol>
+  <symbol id="icon-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7-11-7Z"/></symbol>
+  <symbol id="icon-check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></symbol>
+  <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></symbol>
+  <symbol id="icon-layers" viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5 9-5Z"/><path d="M3 12l9 5 9-5"/><path d="M3 16l9 5 9-5"/></symbol>
+  <symbol id="icon-moon" viewBox="0 0 24 24"><path d="M20 15.5A8.5 8.5 0 0 1 8.5 4 7 7 0 1 0 20 15.5Z"/></symbol>
+  <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+</svg>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page-shell" id="top">
+    <header class="site-header" data-reveal>
+      <a class="brand" href="index.html" aria-label="Nycto home">
+        <span class="brand-mark" aria-hidden="true"><img src="assets/nycto-mark.svg" alt=""></span>
+        <span>Nycto</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <svg class="icon-svg"><use href="#icon-menu"></use></svg>
+        <span class="sr-only">Open navigation</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="#features">Features</a>
+        <a href="#tour">Product tour</a>
+        <a href="#privacy">Privacy</a>
+        <a href="privacy.html">Policy</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section-pad">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow"><span></span> Focus tracking for real schedules</p>
+          <h1>Give every minute a clear objective.</h1>
+          <p class="lede">Nycto connects timers, planned calendar blocks, and objective history into one calm record of your day. Start a session, switch goals, and see what actually moved forward.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#tour">
+              <svg class="icon-svg"><use href="#icon-play"></use></svg>
+              Explore the app
+            </a>
+            <a class="button button-secondary" href="privacy.html">Read privacy policy</a>
+          </div>
+          <dl class="metric-strip" aria-label="Nycto example stats">
+            <div>
+              <dt>Planned</dt>
+              <dd>1h</dd>
+            </div>
+            <div>
+              <dt>Tracked</dt>
+              <dd>5m</dd>
+            </div>
+            <div>
+              <dt>Linked</dt>
+              <dd>1/3</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero-stage" data-reveal data-delay="1">
+          <div class="phone-frame hero-phone" aria-label="Nycto app Today screen">
+            <span class="phone-speaker"></span>
+            <img src="assets/screens/today-screen.webp" alt="Nycto Today screen showing a focus timer for Math 101 and day stats.">
+          </div>
+          <div class="orbit-card orbit-card-left" aria-hidden="true">
+            <small>Objective</small>
+            <strong>Math 101</strong>
+            <span>Active focus</span>
+          </div>
+          <div class="orbit-card orbit-card-right" aria-hidden="true">
+            <small>Today</small>
+            <strong>5m</strong>
+            <span>Tracked time</span>
+          </div>
+          <div class="status-rail" aria-hidden="true">
+            <span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="loop section-pad" aria-labelledby="loop-title">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow"><span></span> The loop</p>
+          <h2 id="loop-title">Plan, track, review - without forcing your day into a spreadsheet.</h2>
+        </div>
+        <div class="loop-grid">
+          <article class="loop-card" data-reveal>
+            <span class="step-label">01</span>
+            <div class="icon-badge red"><svg class="icon-svg"><use href="#icon-target"></use></svg></div>
+            <h3>Choose an objective</h3>
+            <p>Pick the work, class, habit, or routine that should receive credit before the timer starts.</p>
+          </article>
+          <article class="loop-card" data-reveal data-delay="1">
+            <span class="step-label">02</span>
+            <div class="icon-badge cyan"><svg class="icon-svg"><use href="#icon-timer"></use></svg></div>
+            <h3>Track the session</h3>
+            <p>Use quick presets, start focused blocks, or log time manually when real life interrupts.</p>
+          </article>
+          <article class="loop-card" data-reveal data-delay="2">
+            <span class="step-label">03</span>
+            <div class="icon-badge violet"><svg class="icon-svg"><use href="#icon-chart"></use></svg></div>
+            <h3>Read the week</h3>
+            <p>See planned versus tracked time, objective share, streaks, and recent sessions in one place.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="feature-mosaic section-pad" id="features" aria-labelledby="features-title">
+        <div class="section-heading narrow" data-reveal>
+          <p class="eyebrow"><span></span> Designed from the app outward</p>
+          <h2 id="features-title">A website UI that matches Nycto instead of using generic template blocks.</h2>
+          <p>The visual system pulls from the product: matte black surfaces, coral action states, violet selection, cyan timing details, amber streaks, and disciplined spacing.</p>
+        </div>
+
+        <div class="mosaic-grid">
+          <article class="feature-card feature-card-large" data-reveal>
+            <div class="feature-copy">
+              <div class="icon-badge red"><svg class="icon-svg"><use href="#icon-link"></use></svg></div>
+              <h3>Sessions stay attached to goals</h3>
+              <p>Every tracked block can point to an objective, so your history is easier to trust at the end of the week.</p>
+            </div>
+            <div class="objective-panel" aria-hidden="true">
+              <div class="objective-head">
+                <span class="objective-icon"><svg class="icon-svg"><use href="#icon-target"></use></svg></span>
+                <div><strong>Math 101</strong><small>Work objective</small></div>
+              </div>
+              <div class="objective-stats">
+                <span><b>3m</b><small>today</small></span>
+                <span><b>1</b><small>streak</small></span>
+                <span><b>64%</b><small>week</small></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="feature-card" data-reveal data-delay="1">
+            <div class="icon-badge cyan"><svg class="icon-svg"><use href="#icon-calendar"></use></svg></div>
+            <h3>Calendar accountability</h3>
+            <p>Planned and tracked time live together, so a day can be reviewed without guessing what happened.</p>
+            <div class="mini-calendar" aria-hidden="true">
+              <span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span>
+              <b>4</b><b>5</b><b>6</b><b>7</b><b>8</b><b class="selected">9</b><b>10</b>
+            </div>
+          </article>
+
+          <article class="feature-card" data-reveal data-delay="2">
+            <div class="icon-badge green"><svg class="icon-svg"><use href="#icon-check"></use></svg></div>
+            <h3>Clear progress, not noise</h3>
+            <p>Dashboard cards prioritize the totals that decide your next move: today, this week, streaks, and objective share.</p>
+            <div class="progress-panel" aria-hidden="true">
+              <span><b>Tracked</b><strong>5m</strong></span>
+              <div><i style="width: 38%"></i></div>
+              <small>8% of planned time tracked</small>
+            </div>
+          </article>
+
+          <article class="feature-card" data-reveal>
+            <div class="icon-badge amber"><svg class="icon-svg"><use href="#icon-layers"></use></svg></div>
+            <h3>Manual time stays first-class</h3>
+            <p>Not every session starts perfectly. Nycto keeps manual logs visible beside timer sessions.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="tour section-pad" id="tour" aria-labelledby="tour-title">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow"><span></span> Product tour</p>
+          <h2 id="tour-title">Four screens, one consistent language for time.</h2>
+        </div>
+        <div class="tour-shell" data-reveal>
+          <div class="tour-tabs" role="tablist" aria-label="Nycto screen tour">
+            <button class="tour-tab is-active" type="button" role="tab" aria-selected="true" data-screen="today">
+              <svg class="icon-svg"><use href="#icon-timer"></use></svg>
+              Today
+            </button>
+            <button class="tour-tab" type="button" role="tab" aria-selected="false" data-screen="objective">
+              <svg class="icon-svg"><use href="#icon-target"></use></svg>
+              Objectives
+            </button>
+            <button class="tour-tab" type="button" role="tab" aria-selected="false" data-screen="insights">
+              <svg class="icon-svg"><use href="#icon-chart"></use></svg>
+              Insights
+            </button>
+            <button class="tour-tab" type="button" role="tab" aria-selected="false" data-screen="calendar">
+              <svg class="icon-svg"><use href="#icon-calendar"></use></svg>
+              Calendar
+            </button>
+          </div>
+
+          <div class="tour-phone-wrap">
+            <div class="phone-frame tour-phone">
+              <span class="phone-speaker"></span>
+              <img id="tour-image" src="assets/screens/today-screen.webp" alt="Nycto Today screen with the timer and current objective.">
+            </div>
+          </div>
+
+          <div class="tour-notes" aria-live="polite">
+            <p class="tour-kicker" id="tour-kicker">Today</p>
+            <h3 id="tour-heading">Start from the objective, then start the clock.</h3>
+            <p id="tour-copy">The Today screen keeps the current objective, timer presets, day totals, and recent session prompt in one focused surface.</p>
+            <ul class="check-list" id="tour-list">
+              <li><svg class="icon-svg"><use href="#icon-check"></use></svg> Quick timer presets and manual fallback</li>
+              <li><svg class="icon-svg"><use href="#icon-check"></use></svg> Current objective is always visible</li>
+              <li><svg class="icon-svg"><use href="#icon-check"></use></svg> Day and week totals stay close to the timer</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="insight-band section-pad" aria-labelledby="insight-title">
+        <div class="insight-card" data-reveal>
+          <div>
+            <p class="eyebrow"><span></span> Calm analytics</p>
+            <h2 id="insight-title">Insights should answer one question: where did the time go?</h2>
+            <p>Nycto favors legible totals, objective breakdowns, and trend context over decorative charts. The result feels close to the mobile app: compact, opinionated, and fast to scan.</p>
+          </div>
+          <div class="ring-summary" aria-hidden="true">
+            <div class="donut" aria-hidden="true">
+              <svg viewBox="0 0 120 120" focusable="false">
+                <circle class="ring-cyan" cx="60" cy="60" r="42" pathLength="100"></circle>
+                <circle class="ring-red" cx="60" cy="60" r="42" pathLength="100"></circle>
+              </svg>
+              <span>5m<small>total</small></span>
+            </div>
+            <div class="legend-lines">
+              <span><i class="red-dot"></i><b>Math 101</b><small>64%</small></span>
+              <span><i class="cyan-dot"></i><b>Test 2</b><small>35%</small></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="privacy-section section-pad" id="privacy" aria-labelledby="privacy-title">
+        <div class="privacy-card" data-reveal>
+          <div class="icon-badge violet"><svg class="icon-svg"><use href="#icon-shield"></use></svg></div>
+          <div>
+            <p class="eyebrow"><span></span> Plain-language privacy</p>
+            <h2 id="privacy-title">Personal time data deserves careful handling.</h2>
+            <p>Nycto is built around personal routines, objectives, sleep context, location labels, and focus history. The privacy page explains what may be stored, how it is used, and what choices users have.</p>
+          </div>
+          <a class="button button-secondary" href="privacy.html">
+            Read the policy
+            <svg class="icon-svg"><use href="#icon-arrow"></use></svg>
+          </a>
+        </div>
+      </section>
+
+      <section class="download-cta section-pad" id="download" aria-labelledby="download-title">
+        <div class="download-panel" data-reveal>
+          <p class="eyebrow"><span></span> Ready for launch</p>
+          <h2 id="download-title">A polished web presence for a focused iOS app.</h2>
+          <p>This static site is ready for GitHub Pages, Netlify, Vercel, or any standard host. Swap the product link when the App Store page is available.</p>
+          <div class="hero-actions centered">
+            <a class="button button-primary" href="#tour">View the app tour</a>
+            <a class="button button-secondary" href="privacy.html">Privacy policy</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand" href="index.html" aria-label="Nycto home">
+        <span class="brand-mark" aria-hidden="true"><img src="assets/nycto-mark.svg" alt=""></span>
+        <span>Nycto</span>
+      </a>
+      <div class="footer-links">
+        <a href="#features">Features</a>
+        <a href="#tour">Tour</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+      <p>Copyright <span id="year"></span> Nycto. All rights reserved.</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
